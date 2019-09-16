@@ -1,15 +1,12 @@
 <?php
-
 namespace SCP;
 
-class ClearanceLevel extends Splenum
+class ClearanceLevel extends Enum
 {
-	const __default = self::Unrestricted;
-	
-	const Unrestricted = 0;
-	const Restricted = 1;
-	const Confidential = 2;
-	const Secret = 3;
-	const TopSecret = 4;
-	const CosmicTopSecret = 5;
+	private const Unrestricted = 0;
+	private const Restricted = 1;
+	private const Confidential = 2;
+	private const Secret = 3;
+	private const TopSecret = 4;
+	private const CosmicTopSecret = 5;
 }

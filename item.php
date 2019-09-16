@@ -4,49 +4,62 @@ namespace SCP;
 
 class item
 {
-	protected $clearencelevel;
-	protected $containmentclass;
-	protected $disruptionclass;
-	protected $riskclass;
-	protected $secondarycontainmentclass;
+	protected $itemNumber;
+	protected $clearanceLevel;
+	protected $containmentClass;
+	protected $disruptionClass;
+	protected $riskClass;
+	protected $secondaryContainmentClass;
 
-	public function __construct($_clearencelevel, $_containmentclass, $_disruptionclass, $_riskclass, $_secondarycontainmentclass)
+	public function __construct($_itemNumber, $_clearanceLevel, $_containmentClass, $_disruptionClass, $_riskClass, $_secondaryContainmentClass = null)
     {
-        $this->clearencelevel = $_clearencelevel;
-        $this->containmentclass = $_containmentclass;
-        $this->disruptionclass = $_disruptionclass;
-        $this->riskclass = $_riskclass;
-        $this->secondarycontainmentclass = $_secondarycontainmentclass;
+		$this->itemNumber = $_itemNumber;
+        $this->clearanceLevel = $_clearanceLevel;
+        $this->containmentClass = $_containmentClass;
+        $this->disruptionClass = $_disruptionClass;
+        $this->riskClass = $_riskClass;
+        $this->secondaryContainmentClass = $_secondaryContainmentClass;
     }
 
-    public function clearancelevel()
+	public function itemNumber()
     {
-        return $this->clearencelevel;
+        return $this->itemNumber;
     }
 
-    public function containmentclass()
+    public function clearanceLevel()
     {
-        return $this->containmentclass;
+        return $this->clearanceLevel;
     }
 
-    public function discuptionclass()
+    public function containmentClass()
     {
-        return $this->disruptionclass;
+        return $this->containmentClass;
     }
 
-    public function riskclass()
+    public function discuptionClass()
     {
-        return $this->riskclass;
+        return $this->disruptionClass;
     }
 
-    public function secondarycontainmentclass()
+    public function riskClass()
     {
-        return $this->secondarycontainmentclass;
+        return $this->riskClass;
     }
 
+    public function secondaryContainmentClass()
+    {
+        return $this->secondaryContainmentClass;
+    }
 
     public function print_it()
     {
-        echo "";
+        echo "Item#: $this->itemNumber\n";
+        echo "Level $this->clearanceLevel: {$this->clearanceLevel->getKey()} \n";
+        echo "Containment Class: {$this->containmentClass->getKey()}\n";
+		if( $this->secondaryContainmentClass != null)
+			echo "Secondary Class: {$this->secondaryContainmentClass->getKey()}\n";;
+        echo "Disruption Class: {$this->disruptionClass->getKey()}\n";
+        echo "Risk Class: {$this->riskClass->getKey()}\n";
+		
     }
 }

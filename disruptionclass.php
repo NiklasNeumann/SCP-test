@@ -2,13 +2,11 @@
 
 namespace SCP;
 
-class DisruptionClass extends Splenum
+class DisruptionClass extends Enum
 {
-	const __default = self::Dark;
-	
-	const Dark = 0;
-	const Vlam = 1;
-	const Keneq = 2;
-	const Ekhi = 3;
-	const Amida = 4;
+	private const Dark = 0;
+	private const Vlam = 1;
+	private const Keneq = 2;
+	private const Ekhi = 3;
+	private const Amida = 4;
 }

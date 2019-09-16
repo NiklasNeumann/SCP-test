@@ -2,13 +2,11 @@
 
 namespace SCP;
 
-class RiskClass extends SplEnum
+class RiskClass extends Enum
 {
-	const __default = self::Notice;
-	
-	const Notice = 0;
-	const Caution = 1;
-	const Warning = 2;
-	const Danger = 3;
-	const Critical = 4;
+	private const Notice = 0;
+	private const Caution = 1;
+	private const Warning = 2;
+	private const Danger = 3;
+	private const Critical = 4;
 }

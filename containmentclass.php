@@ -1,16 +1,13 @@
 <?php
-
 namespace SCP;
 
-class ContainmentClass extends Splenum
+class ContainmentClass extends Enum
 {
-	const __default = self::Pending;
-	
-	const Pending = 0;
-	const Save = 1;
-	const Euclid = 2;
-	const Keter = 3;
-	const Neutralized = 4;
-	const Explained = 5;
-	const Esoteric = 6;
+	private const Pending = 0;
+	private const Save = 1;
+	private const Euclid = 2;
+	private const Keter = 3;
+	private const Neutralized = 4;
+	private const Explained = 5;
+	private const Esoteric = 6;
 }

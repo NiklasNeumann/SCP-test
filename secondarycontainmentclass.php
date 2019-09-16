@@ -2,34 +2,32 @@
 
 namespace SCP;
 
-class SecondaryContainmentClass extends Splenum
+class SecondaryContainmentClass extends Enum
 {
-	const __default = self::None;
-	
-	const None = 0;
-	const Apollyon = 1;
-	const Archon = 2;
-	const Cernnunos = 3;
-	const Declassified = 4;
-	const Embla = 5;
-	const Eparch = 6;
-	const Gevurah = 7;
-	const Gödel = 8;
-	const Hera = 9;
-	const Hiemal = 10;
-	const Humanoid = 11;
-	const Ignosi = 12;
-	const Kušum = 13;
-	const Maksur = 14;
-	const Netzach = 15;
-	const Non-Anomalous = 16;
-	const Principalis = 17;
-	const Threatening = 18;
-	const Tiamat = 19;
-	const Ticonderoga = 20;
-	const Uncontained = 21;
-	const Unknown = 22;
-	const Unnecessary = 23;
-	const Yesod = 24;
-	const Zeno = 25;
+	private const None = 0;
+	private const Apollyon = 1;
+	private const Archon = 2;
+	private const Cernnunos = 3;
+	private const Declassified = 4;
+	private const Embla = 5;
+	private const Eparch = 6;
+	private const Gevurah = 7;
+	private const Gödel = 8;
+	private const Hera = 9;
+	private const Hiemal = 10;
+	private const Humanoid = 11;
+	private const Ignosi = 12;
+	private const Kušum = 13;
+	private const Maksur = 14;
+	private const Netzach = 15;
+	private const Non-Anomalous = 16;
+	private const Principalis = 17;
+	private const Threatening = 18;
+	private const Tiamat = 19;
+	private const Ticonderoga = 20;
+	private const Uncontained = 21;
+	private const Unknown = 22;
+	private const Unnecessary = 23;
+	private const Yesod = 24;
+	private const Zeno = 25;
 }
